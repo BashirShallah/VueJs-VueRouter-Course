@@ -1,17 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-
-import HomePage from './components/HomePage'
-import AboutUsPage from './components/AboutUsPage'
+import routes from "./routes"
 
 Vue.use(VueRouter);
 const router = new VueRouter({
   mode: "history",
-  routes: [
-    {path: "/", component: HomePage},
-    {path: "/about", component: AboutUsPage},
-  ]
+  routes: routes
 })
 
 Vue.config.productionTip = false
