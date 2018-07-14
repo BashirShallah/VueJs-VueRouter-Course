@@ -10,5 +10,10 @@
           About Us
         </router-link>
       </li>
+      <li class="nav-item">
+        <router-link to="/posts" class="nav-link" active-class="active" href="#">
+          Posts
+        </router-link>
+      </li>
     </ul>
 </template>
