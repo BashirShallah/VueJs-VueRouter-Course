@@ -15,5 +15,10 @@
           Posts
         </router-link>
       </li>
+      <li class="nav-item">
+        <router-link to="/users" class="nav-link" active-class="active" href="#">
+          Users
+        </router-link>
+      </li>
     </ul>
 </template>
