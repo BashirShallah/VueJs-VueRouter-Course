@@ -7,10 +7,10 @@ import UsersHomePage from './components/users/UsersHomePage'
 import UsersViewPage from './components/users/UsersViewPage'
 
 const routes = [
-    {path: "/", component: HomePage},
+    {path: "/", component: HomePage, name: "home"},
     {path: "/about", component: AboutUsPage},
     {path: "/posts", component: PostsPage},
-    {path: "/posts/:id", component: PostPage, props: true},
+    {path: "/posts/:id", component: PostPage, props: true, name: "single-post"},
     {path: "/users", component: UsersPage, children: [
         {path: "", component: UsersHomePage},
         {path: ":id", component: UsersViewPage, props: true}

@@ -1,7 +1,7 @@
 <template>
     <ul class="nav nav-pills">
       <li class="nav-item">
-        <router-link to="/" class="nav-link" active-class="active" exact href="#">
+        <router-link :to="{name: 'home'}" class="nav-link" active-class="active" exact href="#">
           Home
         </router-link>
       </li>
