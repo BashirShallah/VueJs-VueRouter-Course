@@ -9,7 +9,10 @@ import NotFoundPage from './components/NotFoundPage'
 
 const routes = [
     {path: "/", component: HomePage, name: "home"},
-    {path: "/about", component: AboutUsPage},
+    {path: "/about", component: AboutUsPage, beforeEnter: (to, from, next)=>{ 
+        console.log('about beforeEnter'); 
+        next();
+    }},
     {path: "/posts", component: PostsPage},
     {path: "/posts/:id", component: PostPage, props: true, name: "single-post"},
     {path: "/users", component: UsersPage, children: [

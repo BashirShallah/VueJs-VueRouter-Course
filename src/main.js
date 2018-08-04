@@ -9,6 +9,11 @@ const router = new VueRouter({
   routes: routes
 })
 
+router.beforeEach( (to, from, next) => {
+  console.log("Router beforeEach");
+  next();
+});
+
 Vue.config.productionTip = false
 
 new Vue({

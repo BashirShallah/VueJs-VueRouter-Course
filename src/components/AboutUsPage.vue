@@ -16,6 +16,17 @@ export default {
                 self.$router.push({path: "/"});
             }, 1000);
         }
+    },
+    beforeRouteEnter(to, from, next){
+        console.log('beforeRouteEnter: inside aboutUs component');
+        next();
+    },
+    beforeRouteLeave(to, from, next){
+        console.log("beforeRouteLeave: inside aboutUs component");
+        
+        if( confirm("sure?") ){
+            next();
+        }
     }
 }
 </script>
